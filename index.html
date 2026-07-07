@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어슬렁</title>
+    <link rel="shortcut icon" href="./images/favi2-01.png" type="image/x-icon">
+
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!--font-->
+    <link rel="stylesheet" href="./css/webfont.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header id="header" class="inner">
+        <div class="menu">
+            <h1><a href="./index.html"><img src="./images/logo-02.png" alt="logo"></a></h1>
+            <ul>
+                <li><a href="#"><img src="./images/header_icon1.png" alt="seach"></a></li>
+                <li><a href="#"><img src="./images/header_icon2.png" alt="language"></a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html"><span class="line">탐험하기</span></a>
+                    <ul class="sub_menu">
+                        <li><a href="./index.html#map">오늘의 탐험</a></li>
+                        <li><a href="./index.html#program">탐험 준비하기</a></li>
+                        <li><a href="./index.html#review">탐험대 후기</a></li>
+                        <li><a href="./index.html#event">탐험 프로그램</a></li>
+                        <li><a href="./index.html#hero">명예 탐험대원</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub1.html"><span class="line">어슬렁탐험대</span></a>
+                    <ul class="sub_menu">
+                        <li><a href="./sub1.html#story">어슬렁 스토리</a></li>
+                        <li><a href="./sub1.html#difference">어슬렁의 특별함</a></li>
+                        <li><a href="./sub1.html#notice">이용안내</a></li>
+                        <li><a href="./sub1.html#friends">어슬렁 친구들</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub2.html"><span class="line">참여하기</span></a>
+                    <ul class="sub_menu">
+                        <li><a href="./sub2.html#map">스탬프지도</a></li>
+                        <li><a href="./sub2.html#blue_line">습지 탐험대</a></li>
+                        <li><a href="./sub2.html#brown_line">돌바위 탐험대</a></li>
+                        <li><a href="./sub2.html#green_line">푸른숲 탐험대</a></li>
+                        <li><a href="./sub2.html#booking">어슬렁버스 예약</a></li>
+                        <li><a href="./sub2.html#gift">어슬렁 굿즈</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./sub3.html"><span class="line">커뮤니티</span></a>
+                    <ul class="sub_menu">
+                        <li><a href="./sub3.html#notice">이용안내</a></li>
+                        <li><a href="./sub3.html#program">프로그램</a></li>
+                        <li><a href="./sub3.html#room">시설안내</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="video">
+            <video src="./video/main_video.mp4" type="mp4" autoplay muted loop playsinline></video>
+            <img src="./images/bus_road.png" alt="꾸밈요소(흙)">
+        </section>
+
+        <section id="map">
+            <div class="inner">
+                <h2 class="title">
+                    <img src="./images/icon1.png" alt="돋보기아이콘">
+                    오늘은 어떤 <span>모험</span>을 떠나볼까?
+                </h2>
+                <ul class="map_menu">
+                    <li class="active" data-arrow="1"><button>어슬렁본부</button></li>
+                    <li data-arrow="2"><button>체험활동</button></li>
+                    <li data-arrow="3"><button>탐험활동</button></li>
+                </ul>
+                <div class="map_box">
+                    <div class="map_img">
+                        <img src="./images/map.png" alt="지도이미지">
+                        <img src="./images/icon2.png" alt="지도화살표" class="arrow arrow1 active-arrow">
+                        <img src="./images/icon2.png" alt="지도화살표" class="arrow arrow2">
+                        <img src="./images/icon2.png" alt="지도화살표" class="arrow arrow3">
+                    </div>
+                    <div class="map_card">
+                        <div class="card_group active-card" data-card="1">
+                            <img src="./images/1.jpeg" alt="임시">
+                            <img src="./images/2.jpeg" alt="임시">
+                            <img src="./images/3.jpeg" alt="임시">
+                            <img src="./images/4.jpeg" alt="임시">
+                            <img src="./images/5.jpeg" alt="임시">
+                            <img src="./images/6.jpeg" alt="임시">
+                        </div>
+                        <div class="card_group" data-card="2">
+                            <img src="./images/7.jpeg" alt="임시">
+                            <img src="./images/8.jpeg" alt="임시">
+                            <img src="./images/9.jpeg" alt="임시">
+                            <img src="./images/10.jpeg" alt="임시">
+                            <img src="./images/11.jpeg" alt="임시">
+                            <img src="./images/12.jpeg" alt="임시">
+                        </div>
+                        <div class="card_group" data-card="3">
+                            <img src="./images/13.jpeg" alt="임시">
+                            <img src="./images/14.jpeg" alt="임시">
+                            <img src="./images/15.jpeg" alt="임시">
+                            <img src="./images/16.jpeg" alt="임시">
+                            <img src="./images/17.jpeg" alt="임시">
+                            <img src="./images/18.jpeg" alt="임시">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./images/back_gabu.png" alt="가부" class="map_st1">
+            <img src="./images/back_naru.png" alt="나루" class="map_st2">
+        </section>
+
+        <div class="background1">
+            <section id="program">
+                <div class="inner">
+                    <h2 class="title">
+                        <img src="./images/icon3.png" alt="나침반아이콘">
+                        준비됐어? <span>모험</span>을 떠날 시간이야!
+                    </h2>
+                    <ul>
+                        <li class="hover_line1">
+                            <div class="hover_program_box">
+                                <img src="./images/program1.png" alt="프로그램카드1">
+                                <img src="./images/program1_hover.png" alt="호버이미지">
+                            </div>
+                            <h3 class="card_title">체험 프로그램</h3>
+                            <p>다양한 체험활동 프로그램을 예약할 수 있어요</p>
+                            <a href="#">바로가기 →</a>
+                        </li>
+
+                        <li class="hover_line2">
+                            <div class="hover_program_box">
+                                <img src="./images/program2.png" alt="프로그램카드2">
+                                <img src="./images/program2_hover.png" alt="호버이미지">
+                            </div>
+                            <h3 class="card_title">교육 프로그램</h3>
+                            <p>다양한 교육활동 프로그램을 예약할 수 있어요</p>
+                            <a href="#">바로가기 →</a>
+                        </li>
+
+                        <li class="hover_line3">
+                            <div class="hover_program_box">
+                                <img src="./images/program3.png" alt="프로그램카드3">
+                                <img src="./images/program3_hover.png" alt="호버이미지">
+                            </div>
+                            <h3 class="card_title">예약확인</h3>
+                            <p>예약과 관련된 안내사항을 알려드려요</p>
+                            <a href="#">바로가기 →</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="review">
+                <h2 class="title">
+                    <img src="./images/icon4.png" alt="아이콘">
+                    어슬렁 탐험대와 <span>함께</span>한 순간들
+                </h2>
+                <div class="review_pic">
+                    <div class="slide1">
+                        <ul>
+                            <li class="us_gabu2">
+                                <img src="./images/1.jpeg" alt="체험활동1" class="mm">
+                                <img src="./images/pic_us2.png" alt="가부프레임2" class="us_pic_gabu2">
+                            </li>
+                            <li>
+                                <img src="./images/2.jpeg" alt="체험활동2" class="ss">
+                            </li>
+                            <li class="us_naru1">
+                                <img src="./images/3.jpeg" alt="체험활동3" class="xl">
+                                <img src="./images/pic_us1.png" alt="나루프레임" class="us_pic_naru1">
+                            </li>
+                            <li>
+                                <img src="./images/21.jpeg" alt="체험활동4" class="ss2">
+                            </li>
+                            <li class="us_gabu2">
+                                <img src="./images/24.jpeg" alt="체험활동10" class="mm">
+                                <img src="./images/pic_us2.png" alt="가부프레임2" class="us_pic_gabu2">
+                            </li>
+                            <li>
+                                <img src="./images/11.jpeg" alt="체험활동11" class="ss">
+                            </li>
+                            <li class="us_naru1">
+                                <img src="./images/26.jpeg" alt="체험활동12" class="xl">
+                                <img src="./images/pic_us1.png" alt="나루프레임" class="us_pic_naru1">
+                            </li>
+                            <li>
+                                <img src="./images/13.jpeg" alt="체험활동13" class="ss2">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="us_gabu2">
+                                <img src="./images/1.jpeg" alt="체험활동1" class="mm">
+                                <img src="./images/pic_us2.png" alt="가부프레임2" class="us_pic_gabu2">
+                            </li>
+                            <li>
+                                <img src="./images/2.jpeg" alt="체험활동2" class="ss">
+                            </li>
+                            <li class="us_naru1">
+                                <img src="./images/3.jpeg" alt="체험활동3" class="xl">
+                                <img src="./images/pic_us1.png" alt="나루프레임" class="us_pic_naru1">
+                            </li>
+                            <li>
+                                <img src="./images/21.jpeg" alt="체험활동4" class="ss2">
+                            </li>
+                            <li class="us_gabu2">
+                                <img src="./images/24.jpeg" alt="체험활동10" class="mm">
+                                <img src="./images/pic_us2.png" alt="가부프레임2" class="us_pic_gabu2">
+                            </li>
+                            <li>
+                                <img src="./images/11.jpeg" alt="체험활동11" class="ss">
+                            </li>
+                            <li class="us_naru1">
+                                <img src="./images/26.jpeg" alt="체험활동12" class="xl">
+                                <img src="./images/pic_us1.png" alt="나루프레임" class="us_pic_naru1">
+                            </li>
+                            <li>
+                                <img src="./images/13.jpeg" alt="체험활동13" class="ss2">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slide2">
+                        <ul>
+                            <li>
+                                <img src="./images/6.jpeg" alt="체험활동6" class="ss2">
+                            </li>
+                            <li class="us_naru4">
+                                <img src="./images/7.jpeg" alt="체험활동7" class="xl">
+                                <img src="./images/pic_us4.png" alt="나루프레임4" class="us_pic_naru4">
+                            </li>
+                            <li>
+                                <img src="./images/8.jpeg" alt="체험활동8" class="ss">
+                            </li>
+                            <li class="us_gabu3">
+                                <img src="./images/25.jpeg" alt="체험활동9" class="mm">
+                                <img src="./images/pic_us3.png" alt="가부프레임3" class="us_pic_gabu3">
+                            </li>
+                            <li>
+                                <img src="./images/14.jpeg" alt="체험활동14" class="ss2">
+                            </li>
+                            <li class="us_naru4">
+                                <img src="./images/20.jpeg" alt="체험활동15" class="xl">
+                                <img src="./images/pic_us4.png" alt="나루프레임4" class="us_pic_naru4">
+                            </li>
+                            <li>
+                                <img src="./images/23.jpeg" alt="체험활동16" class="ss">
+                            </li>
+                            <li class="us_gabu3">
+                                <img src="./images/16.jpeg" alt="체험활동17" class="mm">
+                                <img src="./images/pic_us3.png" alt="가부프레임3" class="us_pic_gabu3">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="./images/6.jpeg" alt="체험활동6" class="ss2">
+                            </li>
+                            <li class="us_naru4">
+                                <img src="./images/7.jpeg" alt="체험활동7" class="xl">
+                                <img src="./images/pic_us4.png" alt="나루프레임4" class="us_pic_naru4">
+                            </li>
+                            <li>
+                                <img src="./images/8.jpeg" alt="체험활동8" class="ss">
+                            </li>
+                            <li class="us_gabu3">
+                                <img src="./images/25.jpeg" alt="체험활동9" class="mm">
+                                <img src="./images/pic_us3.png" alt="가부프레임3" class="us_pic_gabu3">
+                            </li>
+                            <li>
+                                <img src="./images/14.jpeg" alt="체험활동14" class="ss2">
+                            </li>
+                            <li class="us_naru4">
+                                <img src="./images/20.jpeg" alt="체험활동15" class="xl">
+                                <img src="./images/pic_us4.png" alt="나루프레임4" class="us_pic_naru4">
+                            </li>
+                            <li>
+                                <img src="./images/23.jpeg" alt="체험활동16" class="ss">
+                            </li>
+                            <li class="us_gabu3">
+                                <img src="./images/16.jpeg" alt="체험활동17" class="mm">
+                                <img src="./images/pic_us3.png" alt="가부프레임3" class="us_pic_gabu3">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="img_banner">
+            <a href="#"><img src="./images/banner1_text.png" alt="배너텍스트"></a>
+            <img src="./images/banner-gbnr.png" alt="나루가부">
+        </section>
+
+        <div class="background2">
+            <section id="event">
+                <div class="inner">
+                    <h2 class="title">
+                        <img src="./images/icon5.png" alt="아이콘">
+                        지금<span>어슬렁</span>에서는
+                    </h2>
+                    <ul>
+                        <li class="naru_slide">
+                            <img src="./images/event1.png" alt="이벤트1">
+                            <h3>나루와 함께하는 수달 그림대회</h3>
+                            <p class="date">2026-05-30 ~ 2026-05-30</p>
+                            <p>세계 수달의 날을 맞이하여 나루가 왔다! 부산에 살고 있는 수달들의 보호활동의 일환으로 수달 그림대회를 진행합니다.</p>
+                            <img src="./images/tree_naru.png" alt="스티커" class="event_t1">
+                        </li>
+                        <li>
+                            <img src="./images/event2.png" alt="이벤트2">
+                            <h3>숲속 작은 발견전</h3>
+                            <p class="date">2026-04-01 ~ 2026-09-30</p>
+                            <p>주변에서 흔히 보이는 작은 식물들이 어떤 멋진 작품이 되었을까요? 작지만 아름다운 식물들의 새로운 모습을 만나보세요.</p>
+                        </li>
+                        <li>
+                            <img src="./images/event3.png" alt="이벤트3">
+                            <h3>반딧불이 탐험대</h3>
+                            <p class="date">2026-05-03 ~ 2026-07-15</p>
+                            <p>반짝반짝 작은 빛이 모이는 밤. 귀뚤귀뚤 귀뚜라이들의 소리를 들으며 자연의 빛에 빠져보세요.</p>
+                        </li>
+                        <li>
+                            <img src="./images/event4.png" alt="이벤트4">
+                            <h3>우리동네 생물도감 만들기</h3>
+                            <p class="date">2026-07-01 ~ 2026-08-31</p>
+                            <p>우리동네에는 어떤 동물 친구들이 있을까? 생태해설가와 함께 자연속으로 빠져보세요.</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--스티커들-->
+
+                <img src="./images/tree_gabu.png" alt="스티커" class="event_t2">
+
+                <img src="./images/grass1.png" alt="풀" class="event_g1">
+                <img src="./images/grass2.png" alt="풀" class="event_g2">
+                <img src="./images/grass3.png" alt="풀" class="event_g3">
+                <img src="./images/grass4.png" alt="풀" class="event_g4">
+
+                <img src="./images/tree_bug.png" alt="무당벌레" class="bug">
+                <img src="./images/grass_fly.png" alt="나비" class="fly1">
+                <img src="./images/grass_fly2.png" alt="나비" class="fly2">
+                <img src="./images/grass_fly.png" alt="나비" class="fly3">
+                <img src="./images/grass_fly2.png" alt="나비" class="fly4">
+
+            </section>
+
+            <section id="hero">
+                <h2 class="title"><img src="./images/icon6.png" alt="아이콘">
+                    내가 바로 어슬렁의 <span>주인공</span>
+                </h2>
+                <!-- Swiper -->
+                <div class="swiper hero_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/hero1.jpeg" alt="어린이참여작1"></div>
+                        <div class="swiper-slide"><img src="./images/hero2.jpeg" alt="어린이참여작2"></div>
+                        <div class="swiper-slide"><img src="./images/hero3.jpeg" alt="어린이참여작3"></div>
+                        <div class="swiper-slide"><img src="./images/hero4.jpeg" alt="어린이참여작4"></div>
+                        <div class="swiper-slide"><img src="./images/hero5.jpeg" alt="어린이참여작5"></div>
+                        <div class="swiper-slide"><img src="./images/hero6.jpeg" alt="어린이참여작6"></div>
+                        <div class="swiper-slide"><img src="./images/hero7.jpeg" alt="어린이참여작7"></div>
+                        <div class="swiper-slide"><img src="./images/hero8.jpeg" alt="어린이참여작8"></div>
+                        <div class="swiper-slide"><img src="./images/hero9.jpeg" alt="어린이참여작9"></div>
+                        <div class="swiper-slide"><img src="./images/hero10.jpeg" alt="어린이참여작10"></div>
+                        <div class="swiper-slide"><img src="./images/hero11.jpeg" alt="어린이참여작11"></div>
+                        <div class="swiper-slide"><img src="./images/hero12.jpeg" alt="어린이참여작12"></div>
+                        <div class="swiper-slide"><img src="./images/hero13.jpeg" alt="어린이참여작13"></div>
+                        <div class="swiper-slide"><img src="./images/hero14.jpeg" alt="어린이참여작14"></div>
+                        <div class="swiper-slide"><img src="./images/hero15.jpeg" alt="어린이참여작15"></div>
+                        <div class="swiper-slide"><img src="./images/hero16.jpeg" alt="어린이참여작16"></div>
+                        <div class="swiper-slide"><img src="./images/hero17.jpeg" alt="어린이참여작17"></div>
+                        <div class="swiper-slide"><img src="./images/hero8.jpeg" alt="어린이참여작8"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="inner">
+            <h1><a href="#"><img src="./images/logo-02.png" alt="로고이미지"></a></h1>
+            <ul>
+                <li><a href="#"><span>개인정보처리방침</span></a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">저작권정책</a></li>
+                <li><a href="#">오시는길</a></li>
+            </ul>
+            <h4>을숙도생태공원(604020) 부산 사하구 하단동 1207 ㅣ 051-245-1650 </h4>
+            <p>Copyright © 2026 USREUNG. All rights reserved</p>
+        </div>
+
+        <img src="./images/footer_gabu.png" alt="푸터가부" class="footer_gabu">
+        <img src="./images/footer_naru.png" alt="푸터나루" class="footer_naru">
+        <img src="./images/footer_grass.svg" alt="푸터수풀" class="footer_grass">
+    </footer>
+
+    <!--popup-->
+    <div class="popup_box">
+        <a href="#"><img src="./images/popup1.png" alt="버스안내팝업" class="popup"></a>
+        <img src="./images/close_bnt.png" alt="닫기버튼" class="popup_close">
+    </div>
+    <a href="#header"><img src="./images/top_bnt.png" alt="위로가기버튼" class="top_btn"></a>
+
+
+    <script>
+        //지도버튼
+        const menu = document.querySelectorAll(".map_menu li");
+
+        menu.forEach(item => {
+
+            item.addEventListener("click", function () {
+
+                menu.forEach(li => {
+                    li.classList.remove("active");
+                });
+
+                this.classList.add("active");
+
+                const arrowNum = this.dataset.arrow;
+
+                document.querySelectorAll(".arrow").forEach(arrow => {
+                    arrow.classList.remove("active-arrow");
+                });
+
+                document.querySelector(".arrow" + arrowNum)
+                    .classList.add("active-arrow");
+
+                const cardNum = this.dataset.arrow;
+
+                document.querySelectorAll(".card_group").forEach(card => {
+                    card.classList.remove("active-card");
+                });
+
+                document.querySelector(
+                    '.card_group[data-card="' + cardNum + '"]'
+                ).classList.add("active-card");
+
+            });
+
+        });
+
+        //팝업창
+        document.querySelector(".popup_close").onclick = function () {
+            document.querySelector(".popup_box").style.display = "none";
+        }
+
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".hero_slide", {
+            slidesPerView: 4,
+            slidesPerGroup: 3,
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <!--aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

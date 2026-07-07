@@ -1,0 +1,602 @@
+@charset "UTF-8";
+/* font-family: 'CookieRun';*/
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Pretendard';
+    color: #111;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #F9EDE3;
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+/*header*/
+.inner {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#header a {
+    display: block;
+    padding: 10px 0 20px;
+}
+
+#header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+}
+
+#header .menu ul {
+    display: flex;
+    gap: 10px;
+}
+
+#header nav {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 650px;
+}
+
+#header nav ul {
+    display: flex;
+    font-family: 'CookieRun';
+    font-size: 18px;
+    font-weight: bold;
+    color: #714B2E;
+    justify-content: space-between;
+}
+
+/*서브메뉴*/
+
+#header nav ul li .line:hover {
+    border-bottom: #557836 solid 3px;
+}
+
+#header .menu {
+    position: relative;
+}
+
+#header .sub_menu {
+    font-family: 'Pretendard';
+    color: #111;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #fff;
+    position: absolute;
+    top: 45px;
+    left: -50%;
+    width: 1300px;
+    height: 0px;
+    justify-content: center;
+    gap: 50px;
+    overflow: hidden;
+    align-items: center;
+    transition: all 0.3s;
+    border-radius: 0 0 20px 20px;
+}
+
+#header>nav>ul>li:hover .sub_menu {
+    height: 110px;
+}
+
+#header>nav>ul>li:hover {
+    color: #557836;
+}
+
+#header .sub_menu li {
+    width: fit-content;
+    background-color: #fff;
+    border-radius: 20px
+}
+
+#header .sub_menu li a {
+    padding: 10px 20px;
+}
+
+#header nav ul li:hover>.sub_menu {
+    transform: translateY(0);
+}
+
+#header .sub_menu li:hover {
+    background-color: #eee;
+}
+
+#header nav ul li:hover>#header .menu {
+    border-radius: 0 0;
+}
+
+/* banner1 */
+#banner1{
+    background-image: url(../sub2_images/bn1.png);
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+}
+.bn_sub_title{
+    letter-spacing: 51%;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.bn_title{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 84px;
+}
+.bn_title>span{
+    color: #EFA418;
+}
+/* start */
+#start{
+    text-align: center;
+    padding: 200px 0;
+}
+.title{
+    font-family: 'CookieRun';
+    font-size: 40px;
+    color: #714B2E;
+    padding-bottom: 40px;
+}
+#start video{
+    width: 800px;
+    margin: 0 auto;
+}
+/* map */
+#map{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.sub_title{
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+#map img{
+    margin: 0 auto;
+}
+/* gogo */
+#gogo{
+    text-align: center;
+    background-image: url(../sub2_images/bg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#gogo img{
+    margin: 0 auto;
+    padding-bottom: 210px;
+}
+#gogo span{
+    font-size: 26px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 35px;
+    border-radius: 999px;
+}
+.blue_line>span{
+    background-color: #144679;
+}
+.brown_line>span{
+    background-color: #714B2E;
+}
+.green_line>span{
+    background-color: #557836;
+}
+.map_sub_text{
+    font-size: 18px;
+    padding: 26px 0 80px;
+}
+.blue_line{
+    position: relative;
+}
+.go_map1{
+    position: absolute;
+    top: 120px;
+    left: -30px;
+    transform-origin:center bottom;
+    animation:mapBounce 3.5s ease-in-out infinite;
+}
+@keyframes mapBounce{
+
+     /* 쉬기 */
+    0%,55%,100%{
+        transform:
+        translateY(0)
+        scaleX(1)
+        scaleY(1);
+    }
+
+    /* 움츠리기 */
+    8%{
+        transform:
+        translateY(3px)
+        scaleX(1.08)
+        scaleY(0.92);
+    }
+
+    /* 첫 점프 */
+    16%{
+        transform:
+        translateY(-14px)
+        scaleX(0.94)
+        scaleY(1.08);
+    }
+
+    /* 착지 */
+    24%{
+        transform:
+        translateY(0)
+        scaleX(1.06)
+        scaleY(0.94);
+    }
+
+    /* 두 번째 점프 */
+    32%{
+        transform:
+        translateY(-8px)
+        scaleX(0.97)
+        scaleY(1.03);
+    }
+
+    /* 원래대로 */
+    40%{
+        transform:
+        translateY(0)
+        scale(1);
+    }
+
+
+}
+.done_map1{
+    position: absolute;
+    bottom: 20px;
+    right: -100px;
+    transform-origin:center bottom;
+    animation:mapBounce 3.5s ease-in-out infinite;
+    animation-delay:0.5s;
+}
+.brown_line{
+    position: relative;
+}
+.go_map2{
+    position: absolute;
+    top: 120px;
+    left: -30px;
+    transform-origin:center bottom;
+    animation:mapBounce 3.5s ease-in-out infinite;
+}
+.done_map2{
+    position: absolute;
+    bottom: 20px;
+    right: -100px;
+    transform-origin:center bottom;
+    animation:mapBounce 3.5s ease-in-out infinite;
+    animation-delay:0.5s;
+}
+.green_line{
+    position: relative;
+}
+.go_map3{
+    position: absolute;
+    top: 120px;
+    left: -30px;
+    transform-origin:center bottom;
+    animation:mapBounce 3.5s ease-in-out infinite;
+}
+.done_map3{
+    position: absolute;
+    bottom: 20px;
+    right: -100px;
+    transform-origin:center bottom;
+    animation:mapBounce 3.5s ease-in-out infinite;
+    animation-delay:0.5s;
+}
+/* booking */
+#booking{
+    text-align: center;
+    padding-bottom: 200px;
+    background-image: url(../sub2_images/bg2.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+#booking img{
+    margin: 0 auto;
+}
+#booking ul{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding-top: 50px;
+    position: relative;
+}
+.left_ticket, .right_ticket{
+    width: 300px;
+    position: relative;
+}
+.left_ticket>a, .right_ticket>a{
+    display: block;
+}
+.left_ticket a:hover{
+    transform: scale(1.5,1.5);
+}
+.right_ticket a:hover{
+    transform: scale(1.5,1.5);
+}
+.ticket_text{
+    font-size: 20px;
+    font-family: 'CookieRun';
+    font-weight: 600;
+}
+.left_ticket .ticket_text{
+    color: #354626;
+    position: absolute;
+    top: 70px;
+    left: 65px;
+}
+.right_ticket .ticket_text{
+    color: #192D42;
+   position: absolute;
+   top: 70px;
+   left: 90px;
+}
+.ticket_naru{
+    position: absolute;
+    top: 0;
+    left: -130px;
+    animation: jump 2s infinite;
+    transform-origin: bottom center;
+}
+
+.ticket_gabu{
+    position: absolute;
+    top: 0;
+    right: -130px;
+    animation: jump 2s infinite;
+    transform-origin: bottom center;
+    animation-delay: 0.7s;
+}
+@keyframes jump{
+     0%{
+        transform: translateY(0) scaleY(1);
+    }
+    /* 점프 전 살짝 눌림 */
+    5%{
+        transform: translateY(0) scaleY(0.9);
+    }
+    /* 첫 점프 */
+    12%{
+        transform: translateY(-30px) scaleY(1.05);
+    }
+    20%{
+        transform: translateY(0) scaleY(1);
+    }
+    /* 두 번째 점프 */
+    27%{
+        transform: translateY(0) scaleY(0.95);
+    }
+    34%{
+        transform: translateY(-20px) scaleY(1.03);
+    }
+    42%{
+        transform: translateY(0) scaleY(1);
+    }
+    /* 쉬는 시간 */
+    100%{
+        transform: translateY(0) scaleY(1);
+    }
+}
+.bus{
+    display:block;
+    margin:0 auto;
+}
+
+/* banner2 */
+#banner2{
+    background-image: url(../sub2_images/bn2.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* gift */
+#gift{
+    text-align: center;
+    padding: 170px 0;
+}
+#gift ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+}
+#gift .title{
+    padding-bottom: 100px;
+}
+#gift li:hover{
+    transform: rotate(15deg);
+}
+
+/*footer*/
+#footer {
+    padding: 150px 0 90px;
+    background: url(../sub2_images/footer.svg) no-repeat bottom center;
+    text-align: center;
+    position: relative;
+}
+
+.footer_gabu {
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    animation: gabuPeek 4s ease-in-out infinite;
+}
+
+@keyframes gabuPeek {
+    0% {
+        transform: translateY(50px);
+    }
+    30% {
+        transform: translateY(50px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+.footer_naru {
+    animation: naruPeek 4s ease-in-out infinite;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+@keyframes naruPeek {
+    0% {
+        transform: translateY(50px);
+    }
+    20% {
+        transform: translateY(-10px);
+    }
+    30% {
+        transform: translateY(0);
+    }
+    60% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+.footer_grass {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: center bottom;
+    animation: bushMove 4s ease-in-out infinite;
+}
+
+@keyframes bushMove {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#footer .inner {
+    width: 1110px;
+}
+
+#footer h1 img {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+#footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 101px;
+    background-color: #fff;
+    border-radius: 180px;
+}
+
+#footer ul li a {
+    display: block;
+    padding: 20px 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#footer ul li span {
+    font-weight: 700;
+    color: #557836;
+}
+
+#footer h4 {
+    padding: 36px 0 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#footer p {
+    color: #FAF6F2;
+    font-size: 14px;
+}
+
+.footer_grass,
+.footer_gabu,
+.footer_naru{
+    pointer-events:none;
+}
+
+/*top*/
+.top_btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    transition: 0.3s;
+}
+
+.top_btn:hover {
+    transform: scale(1.1);
+}
