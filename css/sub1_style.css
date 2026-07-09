@@ -970,13 +970,13 @@ body {
 
 /*notice*/
 #notice {
-
     background-image: url(../sub1_images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 250px 0;
     margin: 0 auto;
+    max-width: 1650px;
 }
 
 #notice ul {
@@ -987,7 +987,7 @@ body {
 }
 
 #notice ul li {
-    width: 800px;
+    width: calc((100% - 50px) / 2);
     text-align: center;
 
 }
@@ -1157,7 +1157,8 @@ body {
 /*footer*/
 #footer {
     padding: 150px 0 90px;
-    background: #D8F2C1 url(../sub1_images/footer.svg) no-repeat bottom center;
+    background: #D8F2C1 url(../sub1_images/footer.svg) no-repeat top center;
+    background-size: cover;
     text-align: center;
     position: relative;
 }

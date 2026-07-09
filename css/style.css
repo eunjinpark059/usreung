@@ -153,12 +153,15 @@ body {
 /*video*/
 #video {
     position: relative;
+    margin: 0 auto;
+    width: 100%;
 }
 
 #video img {
     position: absolute;
     bottom: -35%;
     left: 0;
+    width: 100%;
 }
 
 /*map*/
@@ -355,6 +358,7 @@ body {
     background-image: url(../images/bg2.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 #program .title span {
@@ -647,7 +651,7 @@ body {
 /*img_banner*/
 #img_banner {
     margin: 0 auto;
-    background-image: url(../images/banner1_cover.png);
+    background-image: url(../images/banner1_cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
@@ -707,6 +711,7 @@ body {
 #event ul {
     display: flex;
     gap: 42px;
+    justify-content: center;
 }
 
 #event ul li {
@@ -952,7 +957,7 @@ body {
 }
 
 #hero {
-    padding-bottom: 120px;
+    padding-bottom: 100px;
     position: relative;
 }
 
@@ -973,9 +978,11 @@ body {
 /*footer*/
 #footer {
     padding: 150px 0 90px;
-    background: #B8E095 url(../images/footer_grass_bg.svg) no-repeat bottom center;
+    background: #B8E095 url(../images/footer_grass_bg.svg) no-repeat top center;
+    background-size: cover;
     text-align: center;
     position: relative;
+
 }
 
 .footer_gabu {

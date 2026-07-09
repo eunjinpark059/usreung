@@ -144,6 +144,10 @@ body {
     border-radius: 0 0;
 }
 
+/* main_banner */
+#main_banner{
+    width: 100%;
+}
 
 /* notice */
 .title {
@@ -330,7 +334,8 @@ body {
 #program{
     background-image: url(../sub3_images/bag_card.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     padding: 200px 0 250px;
 }
 
@@ -534,6 +539,10 @@ body {
     padding: 250px 0 90px;
     text-align: center;
     position: relative;
+    background-image: url(../sub2_images/footer.svg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .footer_gabu {
