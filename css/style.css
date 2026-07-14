@@ -33,6 +33,7 @@ body {
     background-color: #F9EDE3;
     box-sizing: border-box;
     overflow-x: hidden;
+    min-width: 1450px
 }
 
 /*header*/
@@ -444,54 +445,59 @@ body {
     display: block;
     width: 100%;
 }
-.hover_program_box img:last-child{
+
+.hover_program_box img:last-child {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
 }
-#program li:hover .hover_program_box img:last-child{
+
+#program li:hover .hover_program_box img:last-child {
     opacity: 1;
     animation: pop 0.4s ease;
 }
-#program ul li:hover{
-    transform:translateY(-20px);
-}
-#program li:hover .hover_program_box img:first-child{
-    opacity:0;
-}
-@keyframes pop{
 
-    0%{
+#program ul li:hover {
+    transform: translateY(-20px);
+}
+
+#program li:hover .hover_program_box img:first-child {
+    opacity: 0;
+}
+
+@keyframes pop {
+
+    0% {
         transform: scale(1);
     }
 
-    50%{
+    50% {
         transform: scale(1.08);
     }
 
-    100%{
+    100% {
         transform: scale(1);
     }
 
 }
 
-@keyframes bounce{
+@keyframes bounce {
 
-  0%{
-        transform:scale(1);
+    0% {
+        transform: scale(1);
     }
 
-    40%{
-        transform:scale(1.1);
+    40% {
+        transform: scale(1.1);
     }
 
-    70%{
-        transform:scale(0.95);
+    70% {
+        transform: scale(0.95);
     }
 
-    100%{
-        transform:scale(1);
+    100% {
+        transform: scale(1);
     }
 
 }
@@ -1120,8 +1126,8 @@ body {
 
 .footer_grass,
 .footer_gabu,
-.footer_naru{
-    pointer-events:none;
+.footer_naru {
+    pointer-events: none;
 }
 
 /*popup*/
