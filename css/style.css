@@ -172,6 +172,7 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
     position: relative;
+    background-size: contain;
 }
 
 .title {
@@ -303,7 +304,7 @@ body {
 .card_group img {
     width: 100%;
     display: block;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .card_group img:nth-child(even) {
@@ -355,7 +356,7 @@ body {
 
 /*program*/
 .background1 {
-    background-image: url(../images/bg2.png);
+    background-image: url(../images/bg2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

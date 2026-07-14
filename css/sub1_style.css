@@ -145,12 +145,13 @@ body {
 }
 /* banner1 */
 #banner1{
-    background-image: url(../sub1_images/bn1.png);
+    background-image: url(../sub1_images/bn1.jpg);
     background-repeat: no-repeat;
     height: 800px;
     display: flex;
     align-items: center;
     background-position: center;
+    background-size: cover;
 }
 
 /*story*/
@@ -830,12 +831,13 @@ body {
 
 /* banner2 */
 #banner2{
-    background-image: url(../sub1_images/bn2.png);
+    background-image: url(../sub1_images/bn2.jpg);
     background-repeat: no-repeat;
     height: 800px;
     display: flex;
     align-items: center;
     background-position: center;
+    background-size: cover;
 }
 .banner_sub_title{
     letter-spacing: 51%;
@@ -960,20 +962,25 @@ body {
 }
 /* banner3 */
 #banner3{
-    background-image: url(../sub1_images/bn3.png);
+    background-image: url(../sub1_images/bn3.jpg);
     background-repeat: no-repeat;
     height: 800px;
     display: flex;
     align-items: center;
     background-position: center;
+    background-size: cover;
 }
 
 /*notice*/
-#notice {
+.notice_bg{
     background-image: url(../sub1_images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+#notice {
+    
     padding: 250px 0;
     margin: 0 auto;
     max-width: 1650px;
@@ -1100,12 +1107,13 @@ body {
 
 /*banner4*/
 #banner4{
-    background-image: url(../sub1_images/bn4.png);
+    background-image: url(../sub1_images/bn4.jpg);
     background-repeat: no-repeat;
     height: 800px;
     display: flex;
     align-items: center;
     background-position: center;
+    background-size: cover;
 }
 
 /* friends */

@@ -147,6 +147,7 @@ body {
 /* main_banner */
 #main_banner{
     width: 100%;
+    margin: 0 auto;
 }
 
 /* notice */
@@ -332,11 +333,11 @@ body {
 
 /* 페이지 표시 */
 #program{
-    background-image: url(../sub3_images/bag_card.png);
+    background-image: url(../sub3_images/bag_card.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    padding: 200px 0 250px;
+    padding: 250px 0 300px;
 }
 
 #program .swiper-pagination{

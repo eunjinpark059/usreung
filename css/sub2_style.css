@@ -145,7 +145,7 @@ body {
 
 /* banner1 */
 #banner1{
-    background-image: url(../sub2_images/bn1.png);
+    background-image: url(../sub2_images/bn1.jpg);
     background-repeat: no-repeat;
     height: 800px;
     display: flex;
@@ -195,6 +195,7 @@ body {
 }
 #map img{
     margin: 0 auto;
+    border-radius: 50px;
 }
 /* gogo */
 #gogo{
@@ -202,6 +203,7 @@ body {
     background-image: url(../sub2_images/bg1.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 #gogo img{
     margin: 0 auto;
