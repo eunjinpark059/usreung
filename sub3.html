@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/webfont.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--메타태그-->
     <meta name="description" content="자연과 함께하는 생태브랜드:어슬렁">
     <meta property="og:title" content="어슬렁">
@@ -78,8 +80,8 @@
 
         <section id="notice">
             <div class="inner">
-                <h2 class="title">이용안내</h2>
-                <div class="blue_card notice_card">
+                <h2 class="title" data-aos="zoom-in" data-aos-easing="ease-out-back">이용안내</h2>
+                <div class="blue_card notice_card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                     <div class="blue_card_top">
                         <h3>Operating Hour</h3>
                         <h4>운영시간 안내</h4>
@@ -100,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="green_card notice_card">
+                <div class="green_card notice_card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
                     <div class="green_card_top">
                         <h3>Notice</h3>
                         <h4>관람 시 유의사항</h4>
@@ -125,10 +127,10 @@
 
         <section id="program">
             <div class="inner">
-                <h2 class="title">체험 프로그램</h2>
+                <h2 class="title" data-aos="zoom-in" data-aos-easing="ease-out-back">체험 프로그램</h2>
                 <!-- Swiper -->
 
-                <div class="swiper program_card">
+                <div class="swiper program_card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="program_img">
@@ -294,9 +296,9 @@
         <div class="bg_box">
             <section id="room">
                 <div class="inner">
-                    <h2 class="title">시설안내</h2>
+                    <h2 class="title" data-aos="zoom-in" data-aos-easing="ease-out-back">시설안내</h2>
                     <ul>
-                        <li class="room_box">
+                        <li class="room_box" data-aos="fade-right" data-aos-duration="1000">
                             <div class="room_text">
                                 <h3>가부의 실내정원</h3>
                                 <div class="room_container">
@@ -331,7 +333,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="room_box">
+                        <li class="room_box" data-aos="fade-left" data-aos-duration="1000">
                             <div class="room_img">
                                 <!-- Swiper -->
                                 <div class="swiper room_slide">
@@ -366,7 +368,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="room_box">
+                        <li class="room_box" data-aos="fade-right" data-aos-duration="1000">
                             <div class="room_text">
                                 <h3>도토리상점</h3>
                                 <div class="room_container">
@@ -401,7 +403,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="room_box">
+                        <li class="room_box" data-aos="fade-left" data-aos-duration="1000">
                             <div class="room_img">
                                 <!-- Swiper -->
                                 <div class="swiper room_slide">
@@ -436,7 +438,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="room_box">
+                        <li class="room_box" data-aos="fade-right" data-aos-duration="1000">
                             <div class="room_text">
                                 <h3>어슬렁 탐험아지트</h3>
                                 <div class="room_container">
@@ -471,7 +473,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="room_box">
+                        <li class="room_box" data-aos="fade-left" data-aos-duration="1000">
                             <div class="room_img">
                                 <!-- Swiper -->
                                 <div class="swiper room_slide">
@@ -506,7 +508,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="room_box">
+                        <li class="room_box" data-aos="fade-right" data-aos-duration="1000">
                             <div class="room_text">
                                 <h3>가부의 구름 전망대</h3>
                                 <div class="room_container">
@@ -541,7 +543,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="room_box">
+                        <li class="room_box" data-aos="fade-left" data-aos-duration="1000">
                             <div class="room_img">
                                 <!-- Swiper -->
                                 <div class="swiper room_slide">
@@ -665,7 +667,11 @@
             },
         });
     </script>
-
+<!--aos-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 
 </body>
