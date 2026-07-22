@@ -155,9 +155,10 @@ body {
 #video {
     position: relative;
     margin: 0 auto;
+}
+#video video{
     width: 100%;
 }
-
 #video img {
     position: absolute;
     bottom: -35%;
